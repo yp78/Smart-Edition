@@ -1,0 +1,346 @@
+.overview {
+  height: 1.375rem;
+}
+
+.overview ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview ul h4 {
+  font-size: .35rem;
+  color: #ffff;
+}
+
+.overview ul span {
+  font-size: .2rem;
+  color: #4c9bfd;
+  position: relative;
+  top: -0.075rem;
+}
+
+.monitor {
+  height: 6rem;
+}
+
+.monitor .inner {
+  padding: .3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.monitor .inner .tabs {
+  display: flex;
+  margin-bottom: 0.225rem;
+  padding: 0 .45rem;
+}
+
+.monitor .inner .tabs span {
+  color: #1950c4;
+  padding: 0 .3375rem;
+  font-size: .225rem;
+  cursor: pointer;
+}
+
+.monitor .inner .tabs span:nth-child(1) {
+  padding-left: 0;
+  border-right: .025rem solid #00f2f1;
+}
+
+.monitor .inner .tabs .active {
+  color: #fff;
+}
+
+.monitor .inner .content {
+  display: none;
+  flex: 1;
+  position: relative;
+}
+
+.monitor .inner .content .head {
+  font-size: .175rem;
+  padding: .15rem .45rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: .2rem;
+  color: #68d8fe;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.monitor .inner .content .col:nth-child(1) {
+  width: 1rem;
+}
+
+.monitor .inner .content .col:nth-child(2) {
+  width: 2.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.monitor .inner .content .col:nth-child(3) {
+  width: 1rem;
+}
+
+.monitor .inner .content .marquee-view {
+  position: absolute;
+  bottom: 0;
+  top: .5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.monitor .inner .content .marquee-view .marquee {
+  animation: move 15s linear infinite;
+}
+
+.monitor .inner .content .marquee-view .marquee .row {
+  display: flex;
+  font-size: .175rem;
+  line-height: 1.05;
+  color: #61a8ff;
+  position: relative;
+  justify-content: space-between;
+  padding: 0.15rem 0.45rem;
+}
+
+.monitor .inner .content .marquee-view .marquee .row:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #68d8fe;
+}
+
+.monitor .inner .content .marquee-view .marquee .row:hover .icon-dot {
+  opacity: 1;
+}
+
+.monitor .inner .content .marquee-view .marquee:hover {
+  animation-play-state: paused;
+}
+
+.monitor .inner .content .marquee-view .marquee .icon-dot {
+  position: absolute;
+  left: 0.2rem;
+  opacity: 0;
+}
+
+@keyframes move {
+  0% {
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.point {
+  height: 4.25rem;
+}
+
+.point .inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.point .inner .chart {
+  margin-top: .25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.point .inner .chart .pie {
+  width: 3.9rem;
+  height: 3rem;
+  margin-left: -0.25rem;
+}
+
+.point .inner .chart .data {
+  width: 2.1rem;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: .45rem .375rem;
+  background: url("../image/rect.png") no-repeat 0 0/cover;
+}
+
+.point .inner .chart .data .h4 {
+  color: #fff;
+  margin-bottom: .15rem;
+  font-size: .35rem;
+}
+
+.point .inner .chart .data span {
+  color: #4c9bfd;
+  font-size: .2rem;
+}
+
+.map {
+  height: 7.225rem;
+  margin-bottom: .25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.map .geo {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: .25rem;
+}
+
+.users {
+  height: 4.25rem;
+}
+
+.users .chart {
+  margin-top: .25rem;
+  display: flex;
+}
+
+.users .chart .bar {
+  width: 7.35rem;
+  height: 3rem;
+}
+
+.users .chart .data {
+  width: 2.1rem;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: .45rem .375rem;
+  background: url("../image/rect.png") no-repeat 0 0/cover;
+}
+
+.users .chart .data h4 {
+  margin-bottom: .15rem;
+  font-size: .35rem;
+  color: #fff;
+}
+
+.users .chart .data span {
+  display: block;
+  color: #4c9bfd;
+  font-size: 0.2rem;
+}
+
+.order {
+  height: 1.875rem;
+}
+
+.order .filter {
+  display: flex;
+}
+
+.order .filter span {
+  display: block;
+  height: 0.225rem;
+  line-height: 1;
+  color: #1950c4;
+  padding: 0 0.225rem;
+  font-size: 0.225rem;
+  cursor: pointer;
+  border-right: 0.025rem solid #00f2f1;
+}
+
+.order .filter span:first-child {
+  padding-left: 0;
+}
+
+.order .filter span:last-child {
+  border-right: none;
+}
+
+.order .filter .active {
+  color: #fff;
+  font-size: .25rem;
+}
+
+.order .data {
+  display: flex;
+  margin-top: 0.25rem;
+}
+
+.order .data .item {
+  width: 50%;
+}
+
+.order .data .item h4 {
+  font-size: .35rem;
+  color: #fff;
+  margin-bottom: .125rem;
+}
+
+.order .data .item span {
+  display: block;
+  color: #4c9bfd;
+  font-size: 0.2rem;
+}
+
+.sales {
+  height: 3.1rem;
+}
+
+.sales .inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.sales .inner .caption {
+  display: flex;
+  line-height: 1;
+}
+
+.sales .inner .caption h3 {
+  height: .225rem;
+  padding-right: .225rem;
+  border-right: .025rem solid #00f2f1;
+}
+
+.sales .inner .caption span {
+  font-size: 0.2rem;
+  color: #0bace6;
+  padding: 0.05rem;
+  cursor: pointer;
+  margin: -0.0375rem 0 0 0.2625rem;
+  border-radius: 0.0375rem;
+}
+
+.sales .inner .caption .active {
+  background-color: #4c9bfd;
+  color: #fff;
+}
+
+.sales .inner .chart {
+  flex: 1;
+  padding-top: .1875rem;
+}
+
+.sales .inner .chart .label {
+  color: #4996f5;
+  font-size: .175rem;
+}
+
+.sales .inner .chart .line {
+  width: 100%;
+  height: 100%;
+}
+
+.warp {
+  display: flex;
+}
+
+.warp .channel {
+  flex: 1;
+  height: 2.9rem;
+  margin-right: .25rem;
+}
+
+.warp .quarter {
+  flex: 1;
+  height: 2.9rem;
+}
+
+.top {
+  height: 3.5rem;
+}
